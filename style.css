@@ -14,11 +14,12 @@ h1, h2 {
 .glyphicon
 {
 	font-size: 60px;
-	margin: auto;
+	margin: 0 auto;
 	height: 80px;
 	width: 80px;
-	vertical-align: center;
 	padding: 10px;
+	top: 0px;
+	line-height: 1;
 }
 
 span {
@@ -26,16 +27,16 @@ span {
 }
 
 .red {
-	background: red;
+	background: #ff9999;
+}
+
+.blue {
+	background: #99ccff;
 }
 
 button {
 	border: 3px solid white;
 	outline: none;
-}
-
-.blue {
-	background: blue;
 }
 
 #get,
@@ -51,10 +52,17 @@ button {
 
 .row {
 	text-align: center;
+	height: 97px;
 }
 
-#which {
-
+#newGame {
+	margin: 30px auto;
+	padding: 10px;
+	border: 2px solid black;
+	width: 200px;
+	cursor: pointer;
+	color: white;
+	background: green;
 }
 /*#red:focus, #red:active {
 	background-color: none;
