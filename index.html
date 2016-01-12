@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Tic Tac Toe</h1>
+	<h1 id="title">Tic Tac Toe</h1>
 	<div class="container" id="pregame">
 		<h2>Select Your Playing Piece<h2>
 		<h2 id="player">Player <span id="playerNum">1</span><h2>
@@ -24,23 +24,27 @@
 		<span id="get"><h1>Get </h1></span><span id="ready"><h1> Ready</h1></span>
 	</div>
 	<div class="container" id="game">
+		<h1 id="winner"></h1>
 		<div class="row">
-			<button><span class="glyphicon"></span></button>
-			<button><span class="glyphicon"></span></button>
-			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon" id="s1"></span></button>
+			<button><span class="glyphicon" id="s2"></span></button>
+			<button><span class="glyphicon" id="s3"></span></button>
 		</div>
 		<div class="row">
-			<button><span class="glyphicon"></span></button>
-			<button><span class="glyphicon"></span></button>
-			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon" id="s4"></span></button>
+			<button><span class="glyphicon" id="s5"></span></button>
+			<button><span class="glyphicon" id="s6"></span></button>
 		</div>
 		<div class="row">
-			<button><span class="glyphicon"></span></button>
-			<button><span class="glyphicon"></span></button>
-			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon" id="s7"></span></button>
+			<button><span class="glyphicon" id="s8"></span></button>
+			<button><span class="glyphicon" id="s9"></span></button>
 		</div>
-		<span><h1>Player <span id="turn"></span></h1></span>
-		<button id="which" disabled><span class="glyphicon"></span></button>
+		
+		<span><h1>Player <span id="turn">1</span></h1></span>
+		<button id="which" disabled><span class="glyphicon" id="num"></span></button>
+		<br>
+		<div id="newgame">New Game</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
