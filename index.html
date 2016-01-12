@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<div class="container" id="pregame">
+		<h2>Select Your Playing Piece<h2>
+		<h2 id="player">Player <span id="playerNum">1</span><h2>
+		<button><span class="glyphicon glyphicon-usd" id="dollar"></span></button>
+		<button><span class="glyphicon glyphicon-heart-empty" id="heart"></span></button>
+		<button><span class="glyphicon glyphicon-remove" id="ex"></span></button>
+		<button><span class="glyphicon glyphicon-music" id="music"></span></button>
+		<button><span class="glyphicon glyphicon-flag" id="flag"></span></button>
+		<button><span class="glyphicon glyphicon-camera" id="camera"></span></button>
+		<button><span class="glyphicon glyphicon-screenshot" id="target"></span></button>
+		<button><span class="glyphicon glyphicon-flash" id="lighting"></span></button>
+		<button><span class="glyphicon glyphicon-king" id="king"></span></button>
+		<br>
+		<span id="get"><h1>Get </h1></span><span id="ready"><h1> Ready</h1></span>
+	</div>
+	<div class="container" id="game">
+		<div class="row">
+			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon"></span></button>
+		</div>
+		<div class="row">
+			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon"></span></button>
+		</div>
+		<div class="row">
+			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon"></span></button>
+			<button><span class="glyphicon"></span></button>
+		</div>
+		<span><h1>Player <span id="turn"></span></h1></span>
+		<button id="which" disabled><span class="glyphicon"></span></button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

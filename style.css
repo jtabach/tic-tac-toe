@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.glyphicon {
+	font-size: 60px;
+	margin: auto;
+	height: 80px;
+	width: 80px;
+	vertical-align: center;
+	padding: 10px;
+}
+
+span {
+	text-align: center
+}
+
+.red {
+	background: red;
+}
+
+.red:hover {
+	background: #ff6666;
+}
+
+.blue {
+	background: blue;
+}
+
+.blue:hover {
+	background : #4d4dff;
+}
+
+#get,
+#ready {
+	display: inline-block;
+	margin: 10px;
+	color: green;
+}
+
+.container {
+	text-align: center;
+}
+
+.row {
+	text-align: center;
+}
+
+#which {
+	
+}
+/*#red:focus, #red:active {
+	background-color: none;
+};*/
