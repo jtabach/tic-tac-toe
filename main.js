@@ -16,17 +16,17 @@ function init() {
 function assignPlayer() {
 	if (!pieceSelect) {
 		$this = $(this).addClass('red');
-		$player1 = $this.children()[0];
-
+		$player1 = $this.children().first();
+    $player1.class = $player1.attr('class'); 
 		$('#playerNum').html(2);
-		
     pieceSelect = true;
 		console.log($player1);
 	} else {
 		if ($(this).children()[0].id !== $player1.id) {
 			console.log('2')
 			$(this).addClass('blue');
-			$player2 = $this.children()[0];
+			$player2 = $(this).children().first();
+      $player2.class = $player2.attr('class');
 			$('button').off('click');
 			setTimeout(function() {
 				console.log('go')
@@ -48,16 +48,15 @@ function gameTime() {
 }
 
 function playerMove() {
-	if (pOne) {
-		console.log($player1);
-		console.log($(this).children()[0]);
-		$(this).children().first().replaceWith($player1);
+	$this = $(this);
+   //console.log($this.find('.glyphicon').addClass());
+  if (pOne) {
+		$this.children().first().addClass($player1.class);
 		pOne = false;
 	} else {
 		console.log('2');
-		$(this).children()[0].remove();
+		$this.children().first().addClass($player2.class);
 		pOne = true;
-
 	}
 }
 
